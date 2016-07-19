@@ -23,6 +23,21 @@ def sigmoid(x):
     return theano.tensor.nnet.sigmoid(x)
 
 
+# hard sigmoid
+def hard_sigmoid(x):
+    return theano.tensor.nnet.hard_sigmoid(x)
+
+
+# ultra fast sigmoid
+def ultrafast_sigmoid(x):
+    return theano.tensor.nnet.ultra_fast_sigmoid(x)
+
+
+# h_softmax
+def h_softmax(x):
+    return theano.tensor.nnet.h_softmax(x)
+
+
 # softmax (row-wise)
 def softmax(x):
     """Softmax activation function
